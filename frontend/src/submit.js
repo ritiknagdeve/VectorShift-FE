@@ -25,8 +25,10 @@ export const SubmitButton = () => {
                 }))
             };
 
-            // Send to backend
-            const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8000';
+            // Send to backend - Use production URL on Vercel, localhost for development
+            const backendUrl = process.env.NODE_ENV === 'production' 
+                ? 'https://vectorshift-fe.onrender.com'
+                : 'http://localhost:8000';
             const response = await fetch(`${backendUrl}/pipelines/parse`, {
                 method: 'POST',
                 headers: {
@@ -56,7 +58,7 @@ export const SubmitButton = () => {
             alert(
                 `Failed to analyze pipeline:\n\n` +
                 `${error.message}\n\n` +
-                `Make sure the backend is running on http://localhost:10000`
+                `Make sure the backend is running.`
             );
         }
     };
