@@ -1,0 +1,25 @@
+/* submit.module.css */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(to bottom, #eaeaea 0%, #ffffff 100%);
+  border-top: 1px solid #e5e7eb;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.submitButton {
+  padding: 13px 36px;
+  background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+  color: #5b21b6;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(124, 58, 237, 0.2);
+  outline: none;
+  letter-spacing: -0.01em;
+}
