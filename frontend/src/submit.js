@@ -55,7 +55,7 @@ export const SubmitButton = () => {
             alert(
                 `Failed to analyze pipeline:\n\n` +
                 `${error.message}\n\n` +
-                `Make sure the backend is running on http://localhost:8000`
+                `Make sure the backend is running on http://localhost:10000`
             );
         }
     };
